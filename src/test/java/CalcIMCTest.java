@@ -11,6 +11,6 @@ public class CalcIMCTest {
         double resultado = calc.calcularIMC(70.00, 1.75);
         
         // No JUnit 5, o delta opcional pode ser passado no final se necessário
-        assertEquals(25.00, resultado, 0.01); 
+        assertEquals(22.85, resultado, 0.01); 
     }
 }

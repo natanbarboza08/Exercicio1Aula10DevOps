@@ -1,16 +1,16 @@
 package com.senai;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class CalcIMCTest {
     
     @Test
-    public void testarIMC () {
+    public void testarIMC() {
         CalcIMC calc = new CalcIMC();
         double resultado = calc.calcularIMC(70.00, 1.75);
-        assertEquals(25.00, resultado, 0.01);
+        
+        // No JUnit 5, o delta opcional pode ser passado no final se necessário
+        assertEquals(25.00, resultado, 0.01); 
     }
-
 }
